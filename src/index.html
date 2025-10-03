@@ -1,0 +1,968 @@
+---
+title: 'Electrician Near You | Jesdel Electric | Fort Worth, Texas'
+description: 'Jesdel Electric provides reliable residential and commercial electrical services in Fort Worth, TX. From panel upgrades and generator installs to lighting, wiring, and troubleshooting, our licensed electricians deliver safe, efficient, same-day service you can trust.'
+permalink: '/'
+tags: 'sitemap' # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<!-- Critical styles are loaded first -->
+<link rel="stylesheet" href="/assets/css/critical.css" />
+
+<!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+{% if kit.isProduction %}
+<link
+  rel="preload"
+  href="/assets/css/local.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript>
+  <link rel="stylesheet" href="/assets/css/local.css" />
+</noscript>
+
+{% else %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+{% endif %}
+
+<!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customizing  -->
+<!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+<!-- {% include "components/home-schema.html" %} -->
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1785">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper cs-topper-darkbg">Jesus Delacruz Presents</span>
+      <h1 class="cs-title">JESDEL ELECTRIC</h1>
+      <p class="cs-text">
+        Reliable Electrical Solutions, Done Right the First Time, Every Time.
+      </p>
+      <div class="cs-button-group">
+        <a href="/contact/" class="cs-button-solid cs-button1">CONTACT US</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Image -->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="{% getUrl
+    "/assets/images/lighting.webp" | resize({ width: 640, height: 1490 }) | avif
+    %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{% getUrl
+    "/assets/images/lighting.webp" | resize({ width: 640, height: 1490 }) | webp
+    %}" type="image/webp"> <source media="(max-width: 600px)" srcset="{% getUrl
+    "/assets/images/lighting.webp" | resize({ width: 640, height: 1490 }) | jpeg
+    %}" type="image/jpeg">
+    <!--Tablet Image-->
+    <source media="(max-width: 1024px)" srcset="{% getUrl
+    "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922 }) |
+    avif %}" type="image/avif"> <source media="(max-width: 1024px)" srcset="{%
+    getUrl "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922
+    }) | webp %}" type="image/webp"> <source media="(max-width: 1024px)"
+    srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 2048,
+    height: 1922 }) | jpeg %}" type="image/jpeg">
+    <!--Large Tablet Image-->
+    <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{%
+    getUrl "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922
+    }) | avif %}" type="image/avif"> <source media="(min-width: 1024px) and
+    (max-width: 1300px)" srcset="{% getUrl "/assets/images/lighting.webp" |
+    resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp"> <source
+    media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl
+    "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922 }) |
+    jpeg %}" type="image/jpeg">
+    <!--Desktop Image-->
+    <source media="(min-width: 1300px)" srcset="{% getUrl
+    "/assets/images/lighting.webp" | resize({ width: 1, height: 1 }) | avif %}"
+    type="image/avif"> <source media="(min-width: 1300px)" srcset="{% getUrl
+    "/assets/images/lighting.webp" | resize({ width: 1, height: 1 }) | webp %}"
+    type="image/webp"> <source media="(min-width: 1300px)" srcset="{% getUrl
+    "/assets/images/lighting.webp" | resize({ width: 1, height: 1 }) | jpeg %}"
+    type="image/jpeg"> <img src="{% getUrl "/assets/images/lighting.webp" |
+    resize({ width: 1, height: 1 }) | webp %}" alt="kitchen" width="1"
+    height="1" loading="eager" decoding="async">
+  </picture>
+
+  <img
+    class="cs-graphic"
+    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg"
+    alt="graphic"
+    height="161"
+    width="1920"
+    loading="lazy"
+    decoding="async"
+  />
+  <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+  <img
+    class="cs-graphic cs-graphic-dark"
+    src="./assets/svgs/dark-mode-splatter2.svg"
+    alt="graphic"
+    height="161"
+    width="1920"
+    loading="lazy"
+    decoding="async"
+  />
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-448">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">SERVICES</span>
+      <h2 class="cs-title">
+        ELECTRICAL SERVICES FOR THE FORT WORTH, TEXAS AREA
+      </h2>
+      <p class="cs-text">
+        Jesdel Electric delivers reliable, high-quality electrical solutions
+        designed to keep your home and business powered safely and efficiently.
+        From electrical panel replacements and service upgrades to lighting
+        installations, EV charger setups, and troubleshooting, our licensed
+        experts ensure every project meets the highest standards of safety and
+        craftsmanship. With a commitment to excellence, customer care, and
+        same-day service availability, Jesdel Electric is your trusted partner
+        for all electrical repairs, upgrades, and installations in Fort Worth,
+        Texas.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item fade-in">
+        <div class="cs-flex">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/gifs/electric-tower.gif"
+              alt="icon"
+              width="70"
+              height="70"
+            />
+          </picture>
+          <h3 class="cs-h3">COMMERCIAL SERVICES</h3>
+          <p class="cs-item-text">
+            Running a business is plenty of work without the headache of
+            electrical infrastructure issues. Let us lend a hand with our timely
+            and efficient skill set to decrease down time for you!
+          </p>
+          <a href="/contact/" class="cs-link">GET QUOTE</a>
+        </div>
+        <picture class="cs-picture">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port19.webp" %}" /> <source
+          media="(min-width: 601px)" srcset="{% getUrl
+          "/assets/images/portfolio/port19.webp" %}" />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/portfolio/port19.webp"
+            alt="leaf"
+            width="345"
+            height="428"
+          />
+        </picture>
+      </li>
+      <li class="cs-item fade-in">
+        <div class="cs-flex">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/gifs/power.gif"
+              alt="icon"
+              width="70"
+              height="70"
+            />
+          </picture>
+          <h3 class="cs-h3">RESIDENTIAL SERVICES</h3>
+          <p class="cs-item-text">
+            Whether it is installing an electric car charger, adding an outlet,
+            or emergency repair, we are here to lend our expertise and give you
+            peace of mind.
+          </p>
+          <a href="/contact/" class="cs-link">GET QUOTE</a>
+        </div>
+        <picture class="cs-picture">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port15.webp" %}" /> <source
+          media="(min-width: 601px)" srcset="{% getUrl
+          "/assets/images/portfolio/port15.webp" %}" />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/portfolio/port15.webp"
+            alt="leaf"
+            width="345"
+            height="428"
+          />
+        </picture>
+      </li>
+      <li class="cs-item fade-in">
+        <div class="cs-flex">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/gifs/panel.gif"
+              alt="icon"
+              width="70"
+              height="70"
+            />
+          </picture>
+          <h3 class="cs-h3">SERVICE UPGRADE & REPAIR</h3>
+          <p class="cs-item-text">
+            From design to implementation, let us provide you with peace of mind
+            when it comes to your electrical service!
+          </p>
+          <a href="/contact/" class="cs-link">GET QUOTE</a>
+        </div>
+        <picture class="cs-picture">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port12.webp" %}" /> <source
+          media="(min-width: 601px)" srcset="{% getUrl
+          "/assets/images/portfolio/port12.webp" %}" />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/portfolio/port12.webp"
+            alt="leaf"
+            width="345"
+            height="428"
+          />
+        </picture>
+      </li>
+    </ul>
+    <ul class="cs-card-group">
+      <li class="cs-item fade-in">
+        <div class="cs-flex">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/gifs/light-bulb.gif"
+              alt="icon"
+              width="70"
+              height="70"
+            />
+          </picture>
+          <h3 class="cs-h3">LIGHTING DESIGN & INSTALLATION</h3>
+          <p class="cs-item-text">
+            Our designers can help you discover what is possible as we walk you
+            through the design process for your home or business. We will make
+            your project shine!
+          </p>
+          <a href="/contact/" class="cs-link">GET QUOTE</a>
+        </div>
+        <picture class="cs-picture">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan5.webp" %}" /> <source media="(min-width:
+          601px)" srcset="{% getUrl "/assets/images/portfolio/fan5.webp" %}" />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/portfolio/fan5.webp"
+            alt="leaf"
+            width="345"
+            height="428"
+          />
+        </picture>
+      </li>
+      <li class="cs-item fade-in">
+        <div class="cs-flex">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/gifs/circuit.gif"
+              alt="icon"
+              width="70"
+              height="70"
+            />
+          </picture>
+          <h3 class="cs-h3">EMERGENCY SERVICES</h3>
+          <p class="cs-item-text">
+            When the unexpected happens, we are on call 24/7 to help you through
+            an already difficult situation. You can count on us to be here and
+            give you immediate assistance when you need it most!
+          </p>
+          <a href="/contact/" class="cs-link">GET QUOTE</a>
+        </div>
+        <picture class="cs-picture">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/emergency.webp" %}" /> <source media="(min-width:
+          601px)" srcset="{% getUrl "/assets/images/emergency.webp" %}" />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/emergency.webp"
+            alt="leaf"
+            width="345"
+            height="428"
+          />
+        </picture>
+      </li>
+      <li class="cs-item fade-in">
+        <div class="cs-flex">
+          <picture class="cs-wrapper">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/gifs/renewable-energy.gif"
+              alt="icon"
+              width="70"
+              height="70"
+            />
+          </picture>
+          <h3 class="cs-h3">REWIRING SERVICES</h3>
+          <p class="cs-item-text">
+            No matter the size of your project, we can help you get the details
+            right from the start. Our designers and technicians are well versed
+            in the current National Electric Code and will make sure you won't
+            hit any snags.
+          </p>
+          <a href="/contact/" class="cs-link">GET QUOTE</a>
+        </div>
+        <picture class="cs-picture">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/rewire.webp" %}" /> <source media="(min-width: 601px)"
+          srcset="{% getUrl "/assets/images/rewire.webp" %}" />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/rewire.webp"
+            alt="leaf"
+            width="345"
+            height="428"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RPsbs-313">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-image-group fade-in">
+      <picture class="cs-picture cs-picture1">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{% getUrl
+        "/assets/images/cabinets.webp" | resize({ width: 482, height: 536 }) |
+        avif %}" type="image/avif"> <source media="(max-width: 600px)"
+        srcset="{% getUrl "/assets/images/cabinets.webp" | resize({ width: 482,
+        height: 536 }) | webp %}" type="image/webp"> <source media="(max-width:
+        600px)" srcset="{% getUrl "/assets/images/cabinets.webp" | resize({
+        width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)" srcset="{% getUrl
+        "/assets/images/cabinets.webp" | resize({ width: 802, height: 892 }) |
+        avif %}" type="image/avif"> <source media="(max-width: 1024px)"
+        srcset="{% getUrl "/assets/images/cabinets.webp" | resize({ width: 802,
+        height: 892 }) | webp %}" type="image/webp"> <source media="(max-width:
+        1024px)" srcset="{% getUrl "/assets/images/cabinets.webp" | resize({
+        width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)" srcset="{% getUrl
+        "/assets/images/cabinets.webp" | resize({ width: 1044, height: 1162 }) |
+        avif %}" type="image/avif"> <source media="(min-width: 1024px)"
+        srcset="{% getUrl "/assets/images/cabinets.webp" | resize({ width: 1044,
+        height: 1162 }) | webp %}" type="image/webp"> <source media="(min-width:
+        1024px)" srcset="{% getUrl "/assets/images/cabinets.webp" | resize({
+        width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg"> <img src="{%
+        getUrl "/assets/images/cabinets.webp" | resize({ width: 1044, height:
+        1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy"
+        decoding="async">
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{% getUrl
+        "/assets/images/landing.webp" | resize({ width: 366, height: 354 }) |
+        avif %}" type="image/avif"> <source media="(max-width: 600px)"
+        srcset="{% getUrl "/assets/images/landing.webp" | resize({ width: 366,
+        height: 354 }) | webp %}" type="image/webp"> <source media="(max-width:
+        600px)" srcset="{% getUrl "/assets/images/landing.webp" | resize({
+        width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)" srcset="{% getUrl
+        "/assets/images/landing.webp" | resize({ width: 600, height: 578 }) |
+        avif %}" type="image/avif"> <source media="(max-width: 1024px)"
+        srcset="{% getUrl "/assets/images/landing.webp" | resize({ width: 600,
+        height: 578 }) | webp %}" type="image/webp"> <source media="(max-width:
+        1024px)" srcset="{% getUrl "/assets/images/landing.webp" | resize({
+        width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)" srcset="{% getUrl
+        "/assets/images/landing.webp" | resize({ width: 780, height: 752 }) |
+        avif %}" type="image/avif"> <source media="(min-width: 1024px)"
+        srcset="{% getUrl "/assets/images/landing.webp" | resize({ width: 780,
+        height: 752 }) | webp %}" type="image/webp"> <source media="(min-width:
+        1024px)" srcset="{% getUrl "/assets/images/landing.webp" | resize({
+        width: 780, height: 752 }) | jpeg %}" type="image/jpeg"> <img src="{%
+        getUrl "/assets/images/landing.webp" | resize({ width: 780, height: 752
+        }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy"
+        decoding="async">
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-content">
+      <span class="cs-topper">ABOUT US</span>
+      <h2 class="cs-title">ABOUT JESDEL ELECTRIC</h2>
+      <p class="cs-text">
+        At Jesdel Electric, we take pride in being Fort Worth’s trusted local
+        electrician. With years of hands-on experience, we provide safe,
+        reliable, and affordable electrical services for homes and businesses
+        across the area.<br /><br />
+
+        Our mission is simple: to keep your lights on, your systems running
+        smoothly, and your family safe. From minor repairs and troubleshooting
+        to full wiring projects and panel upgrades, we deliver workmanship you
+        can count on—done right the first time.<br /><br />
+
+        We believe in building lasting relationships with our customers through
+        honesty, professionalism, and exceptional service. Whether it’s an
+        emergency call or a planned project, you can rely on us to show up on
+        time, respect your property, and complete the job with care.<br /><br />
+
+        At the heart of what we do is a commitment to serving our Fort Worth
+        community with integrity and excellence.
+      </p>
+      <div class="cs-quote">
+        <span class="cs-quote-text">
+          As a native Texan, I treat every home and business I work on as if it
+          were my own. My promise is simple—honest work, fair prices, and the
+          peace of mind that your electrical system is safe and reliable.
+        </span>
+        <span class="cs-name">Jesus Delacruz</span>
+        <span class="cs-job">CEO-Founder</span>
+        <img
+          class="cs-quote-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/quote.svg"
+          alt="gavel"
+          width="136"
+          height="77"
+        />
+      </div>
+      <a href="/about/" class="cs-button-solid">About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-289">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex">
+        <span class="cs-topper">Our Process</span>
+        <h2 class="cs-title">WHY CHOOSE JESDEL ELECTRIC</h2>
+      </div>
+      <p class="cs-text">
+        As a trusted Fort Worth electrician, Jesdel Electric is dedicated to
+        safety, efficiency, and customer satisfaction. Trust our licensed
+        professionals to provide dependable solutions with lasting results.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/award.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">100% SATISFACTION GUARANTEE</h3>
+        <p class="cs-item-text">
+          We ensure all customers are completely happy with their result in
+          every electrical project.
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild-black.svg"
+          alt="icon"
+          width="40"
+          height="48"
+        />
+        <h3 class="cs-h3">20+ YEARS EXPERIENCE</h3>
+        <p class="cs-item-text">
+          With over 25 years of experience, our expertise in electrical work is
+          unmatched.
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/call.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">24/7 SUPPORT</h3>
+        <p class="cs-item-text">
+          Our commitment to clear and timely communication ensures a smooth,
+          stress-free experience for every client.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-48">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Portfolio</span>
+      <h2 class="cs-title">The Best at Your Service</h2>
+    </div>
+    <div class="cs-image-group fade-in">
+      <div class="cs-row cs-row-1">
+        <!-- Row 1-->
+        <picture class="cs-picture cs-picture-1">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan1.webp" | resize({ width: 182, height:
+          250 }) | avif %}" type="image/avif"> <source media="(max-width:
+          600px)" srcset="{% getUrl "/assets/images/portfolio/fan1.webp" |
+          resize({ width: 182, height: 250 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan1.webp" | resize({ width: 182, height:
+          250 }) | jpeg %}" type="image/jpeg">
+          <!--Tablet Image-->
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan1.webp" | resize({ width: 634, height:
+          798 }) | avif %}" type="image/avif"> <source media="(max-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan1.webp" |
+          resize({ width: 634, height: 798 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan1.webp" | resize({ width: 634, height:
+          798 }) | jpeg %}" type="image/jpeg">
+          <!--Desktop Image-->
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan1.webp" | resize({ width: 826, height:
+          1134 }) | avif %}" type="image/avif"> <source media="(min-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan1.webp" |
+          resize({ width: 826, height: 1134 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan1.webp" | resize({ width: 826, height:
+          1134 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+          "/assets/images/portfolio/fan1.webp" | resize({ width: 826, height:
+          1134 }) | jpeg %}" alt="new hallway" width="413" height="567"
+          loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-picture cs-picture-2">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan3.webp" | resize({ width: 182, height:
+          276 }) | avif %}" type="image/avif"> <source media="(max-width:
+          600px)" srcset="{% getUrl "/assets/images/portfolio/fan3.webp" |
+          resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan3.webp" | resize({ width: 182, height:
+          276 }) | jpeg %}" type="image/jpeg">
+          <!--Tablet Image-->
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan3.webp" | resize({ width: 634, height:
+          886 }) | avif %}" type="image/avif"> <source media="(max-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan3.webp" |
+          resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan3.webp" | resize({ width: 634, height:
+          886 }) | jpeg %}" type="image/jpeg">
+          <!--Desktop Image-->
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan3.webp" | resize({ width: 826, height:
+          1258 }) | avif %}" type="image/avif"> <source media="(min-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan3.webp" |
+          resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan3.webp" | resize({ width: 826, height:
+          1258 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+          "/assets/images/portfolio/fan3.webp" | resize({ width: 826, height:
+          1258 }) | jpeg %}" alt="new home construction" width="413"
+          height="629" loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-picture cs-picture-3">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan4.webp" | resize({ width: 182, height:
+          226 }) | avif %}" type="image/avif"> <source media="(max-width:
+          600px)" srcset="{% getUrl "/assets/images/portfolio/fan4.webp" |
+          resize({ width: 182, height: 226 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan4.webp" | resize({ width: 182, height:
+          226 }) | jpeg %}" type="image/jpeg">
+          <!--Tablet Image-->
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan4.webp" | resize({ width: 634, height:
+          720 }) | avif %}" type="image/avif"> <source media="(max-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan4.webp" |
+          resize({ width: 634, height: 720 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan4.webp" | resize({ width: 634, height:
+          720 }) | jpeg %}" type="image/jpeg">
+          <!--Desktop Image-->
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan4.webp" | resize({ width: 826, height:
+          1024 }) | avif %}" type="image/avif"> <source media="(min-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan4.webp" |
+          resize({ width: 826, height: 1024 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan4.webp" | resize({ width: 826, height:
+          1024 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+          "/assets/images/portfolio/fan4.webp" | resize({ width: 826, height:
+          1024 }) | jpeg %}" alt="building a new wall" width="413" height="512"
+          loading="lazy" decoding="async">
+        </picture>
+        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+      </div>
+      <!-- Row 2 -->
+      <div class="cs-row cs-row-2">
+        <picture class="cs-picture cs-picture-1">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan5.webp" | resize({ width: 182, height:
+          216 }) | avif %}" type="image/avif"> <source media="(max-width:
+          600px)" srcset="{% getUrl "/assets/images/portfolio/fan5.webp" |
+          resize({ width: 182, height: 216 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan5.webp" | resize({ width: 182, height:
+          216 }) | jpeg %}" type="image/jpeg">
+          <!--Tablet Image-->
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan5.webp" | resize({ width: 634, height:
+          692 }) | avif %}" type="image/avif"> <source media="(max-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan5.webp" |
+          resize({ width: 634, height: 692 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan5.webp" | resize({ width: 634, height:
+          692 }) | jpeg %}" type="image/jpeg">
+          <!--Desktop Image-->
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan5.webp" | resize({ width: 826, height:
+          984 }) | avif %}" type="image/avif"> <source media="(min-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan5.webp" |
+          resize({ width: 826, height: 984 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan5.webp" | resize({ width: 826, height:
+          984 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+          "/assets/images/portfolio/fan5.webp" | resize({ width: 826, height:
+          984 }) | jpeg %}" alt="new kitchen" width="413" height="492"
+          loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-picture cs-picture-2">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan2.webp" | resize({ width: 182, height:
+          228 }) | avif %}" type="image/avif"> <source media="(max-width:
+          600px)" srcset="{% getUrl "/assets/images/portfolio/fan2.webp" |
+          resize({ width: 182, height: 228 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan2.webp" | resize({ width: 182, height:
+          228 }) | jpeg %}" type="image/jpeg">
+          <!--Tablet Image-->
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan2.webp" | resize({ width: 634, height:
+          728 }) | avif %}" type="image/avif"> <source media="(max-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan2.webp" |
+          resize({ width: 634, height: 728 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan2.webp" | resize({ width: 634, height:
+          728 }) | jpeg %}" type="image/jpeg">
+          <!--Desktop Image-->
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan2.webp" | resize({ width: 826, height:
+          1034 }) | avif %}" type="image/avif"> <source media="(min-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan2.webp" |
+          resize({ width: 826, height: 1034 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/fan2.webp" | resize({ width: 826, height:
+          1034 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+          "/assets/images/portfolio/fan2.webp" | resize({ width: 826, height:
+          1034 }) | jpeg %}" alt="apartment addition" width="413" height="517"
+          loading="lazy" decoding="async">
+        </picture>
+
+        <picture class="cs-picture cs-picture-3">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port8.webp" | resize({ width: 182, height:
+          276 }) | avif %}" type="image/avif"> <source media="(max-width:
+          600px)" srcset="{% getUrl "/assets/images/portfolio/port8.webp" |
+          resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port8.webp" | resize({ width: 182, height:
+          276 }) | jpeg %}" type="image/jpeg">
+          <!--Tablet Image-->
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port8.webp" | resize({ width: 634, height:
+          886 }) | avif %}" type="image/avif"> <source media="(max-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.webp" |
+          resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port8.webp" | resize({ width: 634, height:
+          886 }) | jpeg %}" type="image/jpeg">
+          <!--Desktop Image-->
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port8.webp" | resize({ width: 826, height:
+          1258 }) | avif %}" type="image/avif"> <source media="(min-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.webp" |
+          resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port8.webp" | resize({ width: 826, height:
+          1258 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+          "/assets/images/portfolio/port8.webp" | resize({ width: 826, height:
+          1258 }) | jpeg %}" alt="kew kitchen cabinets" width="413" height="629"
+          loading="lazy" decoding="async">
+        </picture>
+
+        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+      </div>
+      <!-- Row 3 -->
+      <div class="cs-row cs-row-3">
+        <picture class="cs-picture cs-picture-1">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port3.webp" | resize({ width: 182, height:
+          276 }) | avif %}" type="image/avif"> <source media="(max-width:
+          600px)" srcset="{% getUrl "/assets/images/portfolio/port3.webp" |
+          resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port3.webp" | resize({ width: 182, height:
+          276 }) | jpeg %}" type="image/jpeg">
+          <!--Tablet Image-->
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port3.webp" | resize({ width: 634, height:
+          880 }) | avif %}" type="image/avif"> <source media="(max-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.webp" |
+          resize({ width: 634, height: 880 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port3.webp" | resize({ width: 634, height:
+          880 }) | jpeg %}" type="image/jpeg">
+          <!--Desktop Image-->
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port3.webp" | resize({ width: 826, height:
+          1250 }) | avif %}" type="image/avif"> <source media="(min-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.webp" |
+          resize({ width: 826, height: 1250 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port3.webp" | resize({ width: 826, height:
+          1250 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+          "/assets/images/portfolio/port3.webp" | resize({ width: 826, height:
+          1250 }) | jpeg %}" alt="new black window structure" width="413"
+          height="625" loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-picture cs-picture-2">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port6.webp" | resize({ width: 182, height:
+          198 }) | avif %}" type="image/avif"> <source media="(max-width:
+          600px)" srcset="{% getUrl "/assets/images/portfolio/port6.webp" |
+          resize({ width: 182, height: 198 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port6.webp" | resize({ width: 182, height:
+          198 }) | jpeg %}" type="image/jpeg">
+          <!--Tablet Image-->
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port6.webp" | resize({ width: 634, height:
+          636 }) | avif %}" type="image/avif"> <source media="(max-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.webp" |
+          resize({ width: 634, height: 636 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port6.webp" | resize({ width: 634, height:
+          636 }) | jpeg %}" type="image/jpeg">
+          <!--Desktop Image-->
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port6.webp" | resize({ width: 826, height:
+          904 }) | avif %}" type="image/avif"> <source media="(min-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.webp" |
+          resize({ width: 826, height: 904 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port6.webp" | resize({ width: 826, height:
+          904 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+          "/assets/images/portfolio/port6.webp" | resize({ width: 826, height:
+          904 }) | jpeg %}" alt="kitchen rebovation" width="413" height="452"
+          loading="lazy" decoding="async">
+        </picture>
+
+        <picture class="cs-picture cs-picture-3">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port9.webp" | resize({ width: 182, height:
+          276 }) | avif %}" type="image/avif"> <source media="(max-width:
+          600px)" srcset="{% getUrl "/assets/images/portfolio/port9.webp" |
+          resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port9.webp" | resize({ width: 182, height:
+          276 }) | jpeg %}" type="image/jpeg">
+          <!--Tablet Image-->
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port9.webp" | resize({ width: 634, height:
+          886 }) | avif %}" type="image/avif"> <source media="(max-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.webp" |
+          resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
+          <source media="(max-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port9.webp" | resize({ width: 634, height:
+          886 }) | jpeg %}" type="image/jpeg">
+          <!--Desktop Image-->
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port9.webp" | resize({ width: 826, height:
+          1258 }) | avif %}" type="image/avif"> <source media="(min-width:
+          1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.webp" |
+          resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="{% getUrl
+          "/assets/images/portfolio/port9.webp" | resize({ width: 826, height:
+          1258 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+          "/assets/images/portfolio/port9.webp" | resize({ width: 826, height:
+          1258 }) | jpeg %}" alt="bathroom renovation" width="413" height="629"
+          loading="lazy" decoding="async">
+        </picture>
+
+        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+      </div>
+    </div>
+    <a href="/gallery/" class="cs-button-solid">VIEW GALLERY</a>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-67">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Reviews</span>
+      <h2 class="cs-title">READ WHAT OUR CUSTOMERS SAY</h2>
+      <p class="cs-text">
+        From the first phone call to the final inspection, we treat every
+        project with the same level of care and attention as if we were working
+        on our own property. Our team is committed to listening to your needs,
+        offering clear solutions, and ensuring your complete
+        satisfaction—because for us, it’s not just about fixing wires, it’s
+        about building lasting relationships with the people we serve.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/quote.svg"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-text">
+          I called Jesdel Electric following the recomendation of 2 friends in
+          Irving. Jesús installed a new 60/240v circuit for us, he was punctual
+          and respectful, communication was excellent (a rare treat among
+          contractors in my experience). I am satisfied with his work and would
+          recommend Jesdel Electric.
+        </p>
+        <div class="cs-info">
+          <div class="cs-flex-group">
+            <span class="cs-name">Flory Malloy</span>
+            <span class="cs-desc">Homeowner</span>
+          </div>
+          <img
+            class="cs-item-stars"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/stars.svg"
+            alt="stars"
+            width="96"
+            height="16"
+          />
+        </div>
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/quote.svg"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-text">
+          Mr. Jesus is a masterful electrician and more importantly, has
+          excellent communication. A lot of contractors don’t always respond or
+          show up on time, but he showed on time several times and was efficient
+          and explained to me the problems as he encountered them. His price was
+          comparable to others. Highly recommend.
+        </p>
+        <div class="cs-info">
+          <div class="cs-flex-group">
+            <span class="cs-name">Wesley Collins</span>
+            <span class="cs-desc">Homeowner</span>
+          </div>
+          <img
+            class="cs-item-stars"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/stars.svg"
+            alt="stars"
+            width="96"
+            height="16"
+          />
+        </div>
+      </li>
+    </ul>
+    <a href="/reviews/" class="cs-button-solid">Read All Reviews</a>
+  </div>
+</section>
+
+{% endblock %}

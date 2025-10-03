@@ -1,0 +1,180 @@
+---
+title: 'Residential Services | Jesdel Electric'
+description: 'Jesdel Electric provides expert residential electrical services in Fort Worth, TX. From panel upgrades to lighting and wiring, trust our licensed electricians for safe, reliable work.'
+permalink: '/residential-services/'
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/privacy.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-310">
+  <div class="cs-container">
+    <span class="cs-int-title">Residential Services</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="/residential-services/" class="cs-link cs-active"
+        >Residential Services</a
+      >
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="{% getUrl
+    "/assets/images/portfolio/port16.webp" | resize({ width: 640, height: 600 })
+    | avif %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{%
+    getUrl "/assets/images/portfolio/port16.webp" | resize({ width: 640, height:
+    600 }) | webp %}" type="image/webp"> <source media="(max-width: 600px)"
+    srcset="{% getUrl "/assets/images/portfolio/port16.webp" | resize({ width:
+    640, height: 600 }) | jpeg %}" type="image/jpeg">
+    <!--Tablet Image-->
+    <source media="(max-width: 1024px)" srcset="{% getUrl
+    "/assets/images/portfolio/port16.webp" | resize({ width: 2048, height: 942
+    }) | avif %}" type="image/avif"> <source media="(max-width: 1024px)"
+    srcset="{% getUrl "/assets/images/portfolio/port16.webp" | resize({ width:
+    2048, height: 942 }) | webp %}" type="image/webp"> <source
+    media="(max-width: 1024px)" srcset="{% getUrl
+    "/assets/images/portfolio/port16.webp" | resize({ width: 2048, height: 942
+    }) | jpeg %}" type="image/jpeg">
+    <!--Desktop Image-->
+    <source media="(min-width: 1024px)" srcset="{% getUrl
+    "/assets/images/portfolio/port16.webp" | resize({ width: 2500, height: 628
+    }) | avif %}" type="image/avif"> <source media="(min-width: 1024px)"
+    srcset="{% getUrl "/assets/images/portfolio/port16.webp" | resize({ width:
+    2500, height: 628 }) | webp %}" type="image/webp"> <source
+    media="(min-width: 1024px)" srcset="{% getUrl
+    "/assets/images/portfolio/port16.webp" | resize({ width: 2500, height: 628
+    }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+    "/assets/images/portfolio/port16.webp" | resize({ width: 2500, height: 628
+    }) | jpeg %}" alt="library" width="1920" height="482" loading="eager"
+    decoding="async">
+  </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+<section id="content-page-1399">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <div class="cs-flex">
+        <picture class="cs-background">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="{% getUrl
+          "/assets/images/portfolio/port16.webp" %}"/>
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset=" {% getUrl
+          "/assets/images/portfolio/port16.webp" %}" />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/portfolio/port16.webp"
+            alt="people"
+            width="542"
+            height="728"
+          />
+        </picture>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img
+              class="cs-h3-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg"
+              alt="icon"
+              width="32"
+              height="32"
+            />
+            Superior Quality
+          </h3>
+          <p class="cs-item-text">
+            We deliver superior quality electrical services at the best pricing,
+            giving you unmatched value every time.
+          </p>
+        </li>
+        <li class="cs-item">
+          <h3 class="cs-h3">
+            <img
+              class="cs-h3-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg"
+              alt="icon"
+              width="32"
+              height="32"
+            />
+            24/7 Availability
+          </h3>
+          <p class="cs-item-text">
+            Available 24/7 to keep your electrical systems running when you need
+            them most.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="cs-content">
+      <h1 class="cs-title">
+        Reliable Residential Electrical Services by Jesdel Electric
+      </h1>
+      <p class="cs-info">
+        At Jesdel Electric, we specialize in providing safe, reliable, and
+        affordable residential electrical services for homeowners across Fort
+        Worth and surrounding areas. Whether you’re building a new home,
+        upgrading your electrical panel, or need fast repairs, our licensed
+        electricians deliver solutions designed to keep your home comfortable,
+        efficient, and code-compliant.
+      </p>
+      <h2>Electrical Panel Upgrades</h2>
+      <p>
+        Ensure your home’s electrical system is safe and capable of handling
+        today’s modern appliances and technology with expert panel replacement
+        and upgrades.
+      </p>
+      <h2>Lighting Installation & Upgrades</h2>
+      <p>
+        From ceiling fans and chandeliers to recessed and under-cabinet
+        lighting, we design and install lighting that enhances both
+        functionality and style in your home.
+      </p>
+      <h2>Wiring & Rewiring Services</h2>
+      <p>
+        Whether it’s new construction, remodeling, or replacing outdated wiring,
+        we provide professional wiring solutions to keep your home safe and
+        energy-efficient.
+      </p>
+      <h2>Circuit Troubleshooting & Repairs</h2>
+      <p>
+        Our experienced electricians quickly identify and repair circuit issues
+        to prevent hazards, improve efficiency, and restore power where you need
+        it most.
+      </p>
+      <h2>Whole-Home Generator Installation</h2>
+      <p>
+        Protect your family during outages with a reliable generator system that
+        ensures continuous power and peace of mind.
+      </p>
+    </div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+{% endblock %}
