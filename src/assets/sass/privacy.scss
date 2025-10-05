@@ -157,7 +157,7 @@
 
     .cs-image-group {
       width: 100%;
-      display: none;
+      // display: none;
       flex-direction: column;
       /* 16px - 20px */
       gap: clamp(1rem, 2.6vw, 1.25rem);
@@ -228,9 +228,9 @@
     .cs-card-group {
       width: 100%;
       max-width: calc(630 / 16 * 1rem);
-      margin: 0 0 calc(24 / 16 * 1rem) 0;
+      margin: calc(24 / 16 * 1rem) 0 calc(24 / 16 * 1rem) 0;
       padding: 0;
-      display: grid;
+      // display: grid;
       grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
       align-items: center;
       gap: clamp(1rem, 2vw, 1.25rem);
@@ -392,6 +392,11 @@
       display: flex;
       /* sends it to the right in the 2nd position */
       order: 2;
+
+      .cs-card-group {
+        margin: 0 0 calc(24 / 16 * 1rem) 0;
+        display: grid;
+      }
     }
   }
 }

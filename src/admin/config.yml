@@ -1,7 +1,7 @@
 # Use DecapBridge auth (required)
 backend:
   name: git-gateway
-  repo: Jameslo599/jesdel-electric
+  repo: Jameslo599/ohms-electrical-ce
   branch: master
   identity_url: https://auth.decapbridge.com/sites/7e78a5c8-353d-4339-9dba-3c9022600406
   gateway_url: https://gateway.decapbridge.com
@@ -22,7 +22,7 @@ local_backend: true
 logo_url: https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/481454401_1188392459659811_1013520013419997181_n.webp?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=0IQX1YsdbJQQ7kNvwGhTysu&_nc_oc=Adkz1wePAAxcSOtc9SJMdhdTdnf0hPjuquURItSEKJAlcbU169wLcVVXO0Rsnd5bO0A&_nc_zt=23&_nc_ht=scontent-hou1-1.xx&_nc_gid=I67UWdjheYqTO1xQSjd7Nw&oh=00_AfYigNIaUTT-RwnPJ2WNP9crND2kqz-rvc-fv5sD788lbg&oe=68DA9420
 
 # Add site links in DecapCMS (optional)
-site_url: https://jesdel.netlify.app
+site_url: https://ohms-ce.netlify.app
 
 # Image folders
 media_folder: 'src/assets/images/blog'

@@ -1,7 +1,7 @@
 ---
-title: 'Commercial Services | Jesdel Electric'
-description: 'Jesdel Electric provides reliable residential and commercial electrical services in Fort Worth, TX. From panel upgrades and generator installs to lighting, wiring, and troubleshooting, our licensed electricians deliver safe, efficient, same-day service you can trust.'
-permalink: '/commercial-services/'
+title: 'Electrical Continuing Education | Ohms Electrical CE'
+description: 'Renew your Texas electrical license easily with Ohms Electrical CE — the most affordable, convenient, and educational online continuing education platform for electricians. Complete state-approved CE courses anytime, anywhere.'
+permalink: '/courses/electrical-continuing-education/'
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
@@ -17,7 +17,9 @@ permalink: '/commercial-services/'
     <span class="cs-int-title">Commercial Services</span>
     <div class="cs-breadcrumbs">
       <a href="/" class="cs-link">Home</a>
-      <a href="/commercial-services/" class="cs-link cs-active"
+      <a
+        href="/courses/electrical-continuing-education/"
+        class="cs-link cs-active"
         >Commercial Services</a
       >
     </div>
@@ -26,33 +28,30 @@ permalink: '/commercial-services/'
   <picture class="cs-background">
     <!--Mobile Image-->
     <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/portfolio/port19.webp" | resize({ width: 640, height: 600 })
-    | avif %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{%
-    getUrl "/assets/images/portfolio/port19.webp" | resize({ width: 640, height:
-    600 }) | webp %}" type="image/webp"> <source media="(max-width: 600px)"
-    srcset="{% getUrl "/assets/images/portfolio/port19.webp" | resize({ width:
-    640, height: 600 }) | jpeg %}" type="image/jpeg">
+    "/assets/images/banner.webp" | resize({ width: 640, height: 600 }) | avif
+    %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{% getUrl
+    "/assets/images/banner.webp" | resize({ width: 640, height: 600 }) | webp
+    %}" type="image/webp"> <source media="(max-width: 600px)" srcset="{% getUrl
+    "/assets/images/banner.webp" | resize({ width: 640, height: 600 }) | jpeg
+    %}" type="image/jpeg">
     <!--Tablet Image-->
     <source media="(max-width: 1024px)" srcset="{% getUrl
-    "/assets/images/portfolio/port19.webp" | resize({ width: 2048, height: 942
-    }) | avif %}" type="image/avif"> <source media="(max-width: 1024px)"
-    srcset="{% getUrl "/assets/images/portfolio/port19.webp" | resize({ width:
-    2048, height: 942 }) | webp %}" type="image/webp"> <source
-    media="(max-width: 1024px)" srcset="{% getUrl
-    "/assets/images/portfolio/port19.webp" | resize({ width: 2048, height: 942
-    }) | jpeg %}" type="image/jpeg">
+    "/assets/images/banner.webp" | resize({ width: 2048, height: 942 }) | avif
+    %}" type="image/avif"> <source media="(max-width: 1024px)" srcset="{% getUrl
+    "/assets/images/banner.webp" | resize({ width: 2048, height: 942 }) | webp
+    %}" type="image/webp"> <source media="(max-width: 1024px)" srcset="{% getUrl
+    "/assets/images/banner.webp" | resize({ width: 2048, height: 942 }) | jpeg
+    %}" type="image/jpeg">
     <!--Desktop Image-->
     <source media="(min-width: 1024px)" srcset="{% getUrl
-    "/assets/images/portfolio/port19.webp" | resize({ width: 2500, height: 628
-    }) | avif %}" type="image/avif"> <source media="(min-width: 1024px)"
-    srcset="{% getUrl "/assets/images/portfolio/port19.webp" | resize({ width:
-    2500, height: 628 }) | webp %}" type="image/webp"> <source
-    media="(min-width: 1024px)" srcset="{% getUrl
-    "/assets/images/portfolio/port19.webp" | resize({ width: 2500, height: 628
-    }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-    "/assets/images/portfolio/port19.webp" | resize({ width: 2500, height: 628
-    }) | jpeg %}" alt="library" width="1920" height="482" loading="eager"
-    decoding="async">
+    "/assets/images/banner.webp" | resize({ width: 2500, height: 628 }) | avif
+    %}" type="image/avif"> <source media="(min-width: 1024px)" srcset="{% getUrl
+    "/assets/images/banner.webp" | resize({ width: 2500, height: 628 }) | webp
+    %}" type="image/webp"> <source media="(min-width: 1024px)" srcset="{% getUrl
+    "/assets/images/banner.webp" | resize({ width: 2500, height: 628 }) | jpeg
+    %}" type="image/jpeg"> <img src="{% getUrl "/assets/images/banner.webp" |
+    resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920"
+    height="482" loading="eager" decoding="async">
   </picture>
 </div>
 
@@ -77,14 +76,14 @@ permalink: '/commercial-services/'
         <picture class="cs-background">
           <!--Mobile Image-->
           <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port19.webp" %}"/>
+          "/assets/images/banner.webp" %}"/>
           <!--Tablet and above Image-->
           <source media="(min-width: 601px)" srcset=" {% getUrl
-          "/assets/images/portfolio/port19.webp" %}" />
+          "/assets/images/banner.webp" %}" />
           <img
             loading="lazy"
             decoding="async"
-            src="/assets/images/portfolio/port19.webp"
+            src="/assets/images/banner.webp"
             alt="people"
             width="542"
             height="728"
@@ -99,16 +98,28 @@ permalink: '/commercial-services/'
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg"
+              src="/assets/svgs/online-learning.svg"
               alt="icon"
               width="32"
               height="32"
             />
-            Superior Quality
+            Course Description
           </h3>
           <p class="cs-item-text">
-            We deliver superior quality electrical services at the best pricing,
-            giving you unmatched value every time.
+            This course offers a complete guide to the National Electrical Code
+            (NEC) and meets all required Texas state regulations (TDLR). It is
+            designed for electricians seeking to renew their license online and
+            qualifies for license renewal as an Electrical Apprentice,
+            Journeyman Electrician, Master Electrician, Journeyman Sign
+            Electrician, Master Sign Electrician, Residential Wireman, or
+            Maintenance Electrician. Gain the knowledge and credit you need
+            quickly, conveniently, and in full compliance with state
+            requirements.<br /><br />
+            -One (1) hour of instruction regarding Rules/Laws (Recently
+            Updated)<br />
+            -Two (2) hours of instruction regarding National Electric Code
+            <br />
+            -One (1) hour of instruction regarding Safety NFPA 70E
           </p>
         </li>
         <li class="cs-item">
@@ -123,21 +134,49 @@ permalink: '/commercial-services/'
               width="32"
               height="32"
             />
-            24/7 Availability
+            Texas State Requirements
           </h3>
           <p class="cs-item-text">
-            Available 24/7 to keep your electrical systems running when you need
-            them most.
+            <strong
+              >Texas Electrician License Renewal and Continuing Education
+              Requirements</strong
+            ><br /><br />
+
+            For each renewal, an electrical apprentice, journeyman electrician,
+            master electrician, journeyman sign electrician, master sign
+            electrician, residential wireman, or maintenance electrician must
+            complete four hours of continuing education in:<br /><br />
+
+            The National Electrical Code, or the current version of the National
+            Electrical Code, as approved by the National Fire Protection
+            Association (NFPA); State law and rules that regulate the conduct of
+            licensees; and Safety as defined in the National Fire Protection
+            Association (NFPA) 70E.<br /><br />
+            <strong>Additional Information Please Contact:</strong>
+            <br /><br />
+            Texas Department of Licensing and Regulation<br />
+            P.O. Box 12157<br />
+            Austin, Texas 78711<br />
+            <br />
+            Telephone: (512) 463-6599<br />
+            Toll-Free (in Texas): 800-803-9202<br />
+            Fax: (512) 475-2871<br />
+            Relay Texas-TDD: (800) 735-2989<br />
+            <br />
+            or visit TDLR website at:
+            <a href="https://www.tdlr.texas.gov/"
+              >https://www.tdlr.texas.gov/</a
+            >
           </p>
         </li>
       </ul>
     </div>
     <div class="cs-content">
       <h1 class="cs-title">
-        Reliable Commercial Electrical Services by Jesdel Electric
+        Reliable Commercial Electrical Services by Ohms Electrical CE
       </h1>
       <p class="cs-info">
-        At Jesdel Electric, we understand that commercial properties demand
+        At Ohms Electrical CE, we understand that commercial properties demand
         reliable, efficient, and code-compliant electrical systems to keep
         operations running smoothly. Our licensed electricians bring years of
         expertise to every project, ensuring businesses in Fort Worth and beyond

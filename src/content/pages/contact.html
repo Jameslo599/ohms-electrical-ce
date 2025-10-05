@@ -1,15 +1,15 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
+title: 'Contact | Ohms Electrical CE'
+description: 'Renew your Texas electrical license easily with Ohms Electrical CE — the most affordable, convenient, and educational online continuing education platform for electricians. Complete state-approved CE courses anytime, anywhere.'
 permalink: '/contact/'
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
 <link rel="stylesheet" href="/assets/css/contact.css" />
-<link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.webp" |
+<link rel="preload" as="image" href="{% getUrl "/assets/images/banner.webp" |
 resize({ width: 640, height: 600 }) | avif %}"/> <link rel="preload" as="image"
-href="{% getUrl "/assets/images/construction.webp" | resize({ width: 576,
-height: 640 }) | avif %}"/> {% endblock %} {% block body %}
+href="{% getUrl "/assets/images/banner.webp" | resize({ width: 576, height: 640
+}) | avif %}"/> {% endblock %} {% block body %}
 
 <!-- ============================================ -->
 <!--                   Banner                     -->
@@ -27,28 +27,28 @@ height: 640 }) | avif %}"/> {% endblock %} {% block body %}
   <picture class="cs-background">
     <!--Mobile Image-->
     <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/cabinets.webp" | resize({ width: 640, height: 600 }) | avif
+    "/assets/images/banner.webp" | resize({ width: 640, height: 600 }) | avif
     %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/cabinets.webp" | resize({ width: 640, height: 600 }) | webp
+    "/assets/images/banner.webp" | resize({ width: 640, height: 600 }) | webp
     %}" type="image/webp"> <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/cabinets.webp" | resize({ width: 640, height: 600 }) | jpeg
+    "/assets/images/banner.webp" | resize({ width: 640, height: 600 }) | jpeg
     %}" type="image/jpeg">
     <!--Tablet Image-->
     <source media="(max-width: 1024px)" srcset="{% getUrl
-    "/assets/images/cabinets.webp" | resize({ width: 2048, height: 942 }) | avif
+    "/assets/images/banner.webp" | resize({ width: 2048, height: 942 }) | avif
     %}" type="image/avif"> <source media="(max-width: 1024px)" srcset="{% getUrl
-    "/assets/images/cabinets.webp" | resize({ width: 2048, height: 942 }) | webp
+    "/assets/images/banner.webp" | resize({ width: 2048, height: 942 }) | webp
     %}" type="image/webp"> <source media="(max-width: 1024px)" srcset="{% getUrl
-    "/assets/images/cabinets.webp" | resize({ width: 2048, height: 942 }) | jpeg
+    "/assets/images/banner.webp" | resize({ width: 2048, height: 942 }) | jpeg
     %}" type="image/jpeg">
     <!--Desktop Image-->
     <source media="(min-width: 1024px)" srcset="{% getUrl
-    "/assets/images/cabinets.webp" | resize({ width: 2500, height: 628 }) | avif
+    "/assets/images/banner.webp" | resize({ width: 2500, height: 628 }) | avif
     %}" type="image/avif"> <source media="(min-width: 1024px)" srcset="{% getUrl
-    "/assets/images/cabinets.webp" | resize({ width: 2500, height: 628 }) | webp
+    "/assets/images/banner.webp" | resize({ width: 2500, height: 628 }) | webp
     %}" type="image/webp"> <source media="(min-width: 1024px)" srcset="{% getUrl
-    "/assets/images/cabinets.webp" | resize({ width: 2500, height: 628 }) | jpeg
-    %}" type="image/jpeg"> <img src="{% getUrl "/assets/images/cabinets.webp" |
+    "/assets/images/banner.webp" | resize({ width: 2500, height: 628 }) | jpeg
+    %}" type="image/jpeg"> <img src="{% getUrl "/assets/images/banner.webp" |
     resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920"
     height="482" loading="eager" decoding="async">
   </picture>
@@ -65,9 +65,8 @@ height: 640 }) | avif %}"/> {% endblock %} {% block body %}
         <span class="cs-topper">Contact</span>
         <h2 class="cs-title">Get in Touch</h2>
         <p class="cs-text">
-          Whether you need residential wiring, commercial upgrades, or emergency
-          electrical repairs in Fort Worth, Texas, our licensed electricians are
-          here to provide fast, reliable, and affordable solutions.
+          Talk to our 24/7 customer support for world-class assistance in
+          continuing your education.
         </p>
       </div>
       <form
@@ -149,7 +148,6 @@ height: 640 }) | avif %}"/> {% endblock %} {% block body %}
         ref="noopener"
       >
         {{ client.address.lineOne }}, <br />
-        {{ client.address.lineTwo }}, <br />
         {{ client.address.city }}, {{ client.address.state }} {{
         client.address.zip }}
       </a>
@@ -157,33 +155,31 @@ height: 640 }) | avif %}"/> {% endblock %} {% block body %}
       <picture class="cs-bg-picture">
         <!--Mobile Image-->
         <source media="(max-width: 600px)" srcset="{% getUrl
-        "/assets/images/construction.webp" | resize({ width: 576, height: 640 })
-        | avif %}" type="image/avif"> <source media="(max-width: 600px)"
-        srcset="{% getUrl "/assets/images/construction.webp" | resize({ width:
-        576, height: 640 }) | webp %}" type="image/webp"> <source
-        media="(max-width: 600px)" srcset="{% getUrl
-        "/assets/images/construction.webp" | resize({ width: 576, height: 640 })
-        | jpeg %}" type="image/jpeg">
+        "/assets/images/support.webp" | resize({ width: 576, height: 640 }) |
+        avif %}" type="image/avif"> <source media="(max-width: 600px)"
+        srcset="{% getUrl "/assets/images/support.webp" | resize({ width: 576,
+        height: 640 }) | webp %}" type="image/webp"> <source media="(max-width:
+        600px)" srcset="{% getUrl "/assets/images/support.webp" | resize({
+        width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
         <!--Tablet Image-->
         <source media="(max-width: 1024px)" srcset="{% getUrl
-        "/assets/images/construction.webp" | resize({ width: 820, height: 1372
-        }) | avif %}" type="image/avif"> <source media="(max-width: 1024px)"
-        srcset="{% getUrl "/assets/images/construction.webp" | resize({ width:
-        820, height: 1372 }) | webp %}" type="image/webp"> <source
-        media="(max-width: 1024px)" srcset="{% getUrl
-        "/assets/images/construction.webp" | resize({ width: 820, height: 1372
-        }) | jpeg %}" type="image/jpeg">
+        "/assets/images/support.webp" | resize({ width: 820, height: 1372 }) |
+        avif %}" type="image/avif"> <source media="(max-width: 1024px)"
+        srcset="{% getUrl "/assets/images/support.webp" | resize({ width: 820,
+        height: 1372 }) | webp %}" type="image/webp"> <source media="(max-width:
+        1024px)" srcset="{% getUrl "/assets/images/support.webp" | resize({
+        width: 820, height: 1372 }) | jpeg %}" type="image/jpeg">
         <!--Desktop Image-->
         <source media="(min-width: 1024px)" srcset="{% getUrl
-        "/assets/images/construction.webp" | resize({ width: 1084, height: 1156
-        }) | avif %}" type="image/avif"> <source media="(min-width: 1024px)"
-        srcset="{% getUrl "/assets/images/construction.webp" | resize({ width:
-        1084, height: 1156 }) | webp %}" type="image/webp"> <source
-        media="(min-width: 1024px)" srcset="{% getUrl
-        "/assets/images/construction.webp" | resize({ width: 1084, height: 1156
-        }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-        "/assets/images/construction.webp" | resize({ width: 1084, height: 1156
-        }) | jpeg %}" alt="building" width="542" height="578" decoding="async">
+        "/assets/images/support.webp" | resize({ width: 1084, height: 1156 }) |
+        avif %}" type="image/avif"> <source media="(min-width: 1024px)"
+        srcset="{% getUrl "/assets/images/support.webp" | resize({ width: 1084,
+        height: 1156 }) | webp %}" type="image/webp"> <source media="(min-width:
+        1024px)" srcset="{% getUrl "/assets/images/support.webp" | resize({
+        width: 1084, height: 1156 }) | jpeg %}" type="image/jpeg"> <img src="{%
+        getUrl "/assets/images/support.webp" | resize({ width: 1084, height:
+        1156 }) | jpeg %}" alt="building" width="542" height="578"
+        decoding="async">
       </picture>
     </div>
   </div>
