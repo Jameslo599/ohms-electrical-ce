@@ -247,19 +247,17 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: auto;
+        width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: top;
       }
     }
 
     .cs-floater {
-      width: clamp(20.125rem, 40vw, 28.1875rem);
-      height: clamp(20.1875rem, 40vw, 28.25rem);
-      position: absolute;
-      bottom: calc(0 / 16 * 1rem);
-      z-index: 1;
-      mix-blend-mode: soft-light;
+      // width: clamp(20.125rem, 40vw, 28.1875rem);
+      // height: clamp(20.1875rem, 40vw, 28.25rem);
+      display: none;
     }
 
     .cs-content {
@@ -474,6 +472,13 @@
     }
 
     .cs-floater {
+      // width: clamp(20.125rem, 40vw, 28.1875rem);
+      // height: clamp(20.1875rem, 40vw, 28.25rem);
+      display: block;
+      position: absolute;
+      bottom: calc(0 / 16 * 1rem);
+      z-index: 1;
+
       mix-blend-mode: normal;
     }
   }
