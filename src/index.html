@@ -34,332 +34,374 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-1785">
+<section id="hero-2275">
   <div class="cs-container">
     <div class="cs-content">
-      <span class="cs-topper cs-topper-darkbg">Jesus Delacruz Presents</span>
-      <h1 class="cs-title">JESDEL ELECTRIC</h1>
+      <h1 class="cs-title">Electrical Continuing Education</h1>
       <p class="cs-text">
-        Reliable Electrical Solutions, Done Right the First Time, Every Time.
+        Complete Your Electrical Continuing Education Online — Fast, Easy, and
+        State-Approved!
       </p>
-      <div class="cs-button-group">
-        <a href="/contact/" class="cs-button-solid cs-button1">CONTACT US</a>
-      </div>
+      <a href="" class="cs-button-solid">
+        Get Started Today
+        <img
+          class="cs-button-arrow"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-arrow-up.svg"
+          decoding="async"
+          alt="arrow"
+          width="20"
+          height="20"
+          aria-hidden="true"
+        />
+      </a>
     </div>
   </div>
-
-  <!-- Background Image -->
-  <picture class="cs-background">
-    <!--Mobile Image-->
-    <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/lighting.webp" | resize({ width: 640, height: 1490 }) | avif
-    %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/lighting.webp" | resize({ width: 640, height: 1490 }) | webp
-    %}" type="image/webp"> <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/lighting.webp" | resize({ width: 640, height: 1490 }) | jpeg
-    %}" type="image/jpeg">
-    <!--Tablet Image-->
-    <source media="(max-width: 1024px)" srcset="{% getUrl
-    "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922 }) |
-    avif %}" type="image/avif"> <source media="(max-width: 1024px)" srcset="{%
-    getUrl "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922
-    }) | webp %}" type="image/webp"> <source media="(max-width: 1024px)"
-    srcset="{% getUrl "/assets/images/lighting.webp" | resize({ width: 2048,
-    height: 1922 }) | jpeg %}" type="image/jpeg">
-    <!--Large Tablet Image-->
-    <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{%
-    getUrl "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922
-    }) | avif %}" type="image/avif"> <source media="(min-width: 1024px) and
-    (max-width: 1300px)" srcset="{% getUrl "/assets/images/lighting.webp" |
-    resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp"> <source
-    media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl
-    "/assets/images/lighting.webp" | resize({ width: 2048, height: 1922 }) |
-    jpeg %}" type="image/jpeg">
-    <!--Desktop Image-->
-    <source media="(min-width: 1300px)" srcset="{% getUrl
-    "/assets/images/lighting.webp" | resize({ width: 1, height: 1 }) | avif %}"
-    type="image/avif"> <source media="(min-width: 1300px)" srcset="{% getUrl
-    "/assets/images/lighting.webp" | resize({ width: 1, height: 1 }) | webp %}"
-    type="image/webp"> <source media="(min-width: 1300px)" srcset="{% getUrl
-    "/assets/images/lighting.webp" | resize({ width: 1, height: 1 }) | jpeg %}"
-    type="image/jpeg"> <img src="{% getUrl "/assets/images/lighting.webp" |
-    resize({ width: 1, height: 1 }) | webp %}" alt="kitchen" width="1"
-    height="1" loading="eager" decoding="async">
-  </picture>
-
-  <img
-    class="cs-graphic"
-    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg"
-    alt="graphic"
-    height="161"
-    width="1920"
-    loading="lazy"
-    decoding="async"
-  />
-  <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
-  <img
-    class="cs-graphic cs-graphic-dark"
-    src="./assets/svgs/dark-mode-splatter2.svg"
-    alt="graphic"
-    height="161"
-    width="1920"
-    loading="lazy"
-    decoding="async"
-  />
+  <div class="cs-image-group">
+    <!--Left Image-->
+    <picture class="cs-background cs-background1">
+      <source
+        media="(max-width: 600px)"
+        srcset="
+          https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg
+        "
+      />
+      <source
+        media="(min-width: 601px)"
+        srcset="
+          https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg
+        "
+      />
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg"
+        alt="construction site"
+        width="1290"
+        height="684"
+      />
+    </picture>
+    <!--Right Image-->
+    <picture class="cs-background cs-background2">
+      <source
+        media="(max-width: 600px)"
+        srcset="
+          https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction4.jpg
+        "
+      />
+      <source
+        media="(min-width: 601px)"
+        srcset="
+          https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction4.jpg
+        "
+      />
+      <img
+        aria-hidden="true"
+        decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction4.jpg"
+        alt="construction site"
+        width="630"
+        height="684"
+      />
+    </picture>
+  </div>
 </section>
 
 <!-- ============================================ -->
 <!--                  Services                    -->
 <!-- ============================================ -->
 
-<section id="services-448">
+<section id="Hservices-2275">
   <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">SERVICES</span>
-      <h2 class="cs-title">
-        ELECTRICAL SERVICES FOR THE FORT WORTH, TEXAS AREA
-      </h2>
-      <p class="cs-text">
-        Jesdel Electric delivers reliable, high-quality electrical solutions
-        designed to keep your home and business powered safely and efficiently.
-        From electrical panel replacements and service upgrades to lighting
-        installations, EV charger setups, and troubleshooting, our licensed
-        experts ensure every project meets the highest standards of safety and
-        craftsmanship. With a commitment to excellence, customer care, and
-        same-day service availability, Jesdel Electric is your trusted partner
-        for all electrical repairs, upgrades, and installations in Fort Worth,
-        Texas.
-      </p>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction1.svg"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">NO TEST. No passing score needed.</h3>
+          <p class="cs-item-text">
+            TDLR Approved for All Texas Electricians, Including Apprentices.
+            Provider# XXXX.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction2.svg"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Work at Your Own Pace</h3>
+          <p class="cs-item-text">
+            An Approved Course Certificate becomes immediately available, No
+            waiting!
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction3.svg"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Available 24/7/365, With 100% Uptime.</h3>
+          <p class="cs-item-text">
+            No Code Book Required, Everything You Need is Included.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item cs-item-background">
+        <picture class="cs-item-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction4.jpg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction4.jpg
+            "
+          />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction4.jpg"
+            alt="construction site"
+            width="630"
+            height="684"
+          />
+        </picture>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/construction4.svg"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <span class="cs-number">3K+</span>
+          <h3 class="cs-h3">Happy Electricians</h3>
+          <p class="cs-item-text">
+            With more than 7 years of expertise we served our clients.
+          </p>
+          <span class="cs-fake-link">
+            Register Today
+            <img
+              class="cs-arrow"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-arrow-up.svg"
+              decoding="async"
+              alt="arrow"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            />
+          </span>
+          <picture class="cs-background">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg
+              "
+            />
+            <img
+              aria-hidden="true"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction3.jpg"
+              alt="construction site"
+              width="630"
+              height="684"
+            />
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1667">
+  <div class="cs-container fade-in">
+    <div class="cs-image-group">
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-standing.jpeg
+          "
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-standing.jpeg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-standing.jpeg"
+          alt="people standing"
+          width="605"
+          height="690"
+        />
+      </picture>
+      <!--SVG Graphic-->
+      <img
+        class="cs-floater"
+        src="/assets/images/books.png"
+        alt="graphic"
+        loading="lazy"
+        decoding="async"
+        height="710"
+        aria-hidden="true"
+        width="690"
+      />
     </div>
-    <ul class="cs-card-group">
-      <li class="cs-item fade-in">
-        <div class="cs-flex">
-          <picture class="cs-wrapper">
+    <div class="cs-content">
+      <span class="cs-topper">Board Services</span>
+      <h2 class="cs-title">Texas Electrical License Renewal Information</h2>
+      <p class="cs-text">
+        View the latest information regarding electrical continuing education
+      </p>
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item">
+          <button class="cs-button">
             <img
               class="cs-icon"
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="/assets/gifs/electric-tower.gif"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/calendar-gold.svg"
               alt="icon"
-              width="70"
-              height="70"
+              width="32"
+              height="32"
             />
-          </picture>
-          <h3 class="cs-h3">COMMERCIAL SERVICES</h3>
-          <p class="cs-item-text">
-            Running a business is plenty of work without the headache of
-            electrical infrastructure issues. Let us lend a hand with our timely
-            and efficient skill set to decrease down time for you!
+            <span class="cs-button-text"
+              >TX Electrical Continuing Education Requirements</span
+            >
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">
+            4 hours of continuing education; some of which must be on NFPA70E
+            (Safety), and some of which must be on the Texas Laws and Rules.
           </p>
-          <a href="/contact/" class="cs-link">GET QUOTE</a>
-        </div>
-        <picture class="cs-picture">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port19.webp" %}" /> <source
-          media="(min-width: 601px)" srcset="{% getUrl
-          "/assets/images/portfolio/port19.webp" %}" />
-          <img
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="/assets/images/portfolio/port19.webp"
-            alt="leaf"
-            width="345"
-            height="428"
-          />
-        </picture>
-      </li>
-      <li class="cs-item fade-in">
-        <div class="cs-flex">
-          <picture class="cs-wrapper">
+        </li>
+        <li class="cs-faq-item active">
+          <button class="cs-button">
             <img
               class="cs-icon"
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="/assets/gifs/power.gif"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/computer-gold.svg"
               alt="icon"
-              width="70"
-              height="70"
+              width="32"
+              height="32"
             />
-          </picture>
-          <h3 class="cs-h3">RESIDENTIAL SERVICES</h3>
-          <p class="cs-item-text">
-            Whether it is installing an electric car charger, adding an outlet,
-            or emergency repair, we are here to lend our expertise and give you
-            peace of mind.
+            <span class="cs-button-text">
+              TX Electrical Board Contact Information
+            </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">
+            Texas Department of Licensing and Regulation - Electrical<br />
+            PO Box 12157<br />
+            Austin, TX<br />
+            78711-2157<br />
+            Phone: (512) 463-6599<br />
+            (800) 803-9202<br />
+            Fax: (512) 463-9468<br />
+            E-mail: electricians@tdlr.texas.go
           </p>
-          <a href="/contact/" class="cs-link">GET QUOTE</a>
-        </div>
-        <picture class="cs-picture">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port15.webp" %}" /> <source
-          media="(min-width: 601px)" srcset="{% getUrl
-          "/assets/images/portfolio/port15.webp" %}" />
-          <img
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="/assets/images/portfolio/port15.webp"
-            alt="leaf"
-            width="345"
-            height="428"
-          />
-        </picture>
-      </li>
-      <li class="cs-item fade-in">
-        <div class="cs-flex">
-          <picture class="cs-wrapper">
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
             <img
               class="cs-icon"
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="/assets/gifs/panel.gif"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/map-pin-gold.svg"
               alt="icon"
-              width="70"
-              height="70"
+              width="32"
+              height="32"
             />
-          </picture>
-          <h3 class="cs-h3">SERVICE UPGRADE & REPAIR</h3>
-          <p class="cs-item-text">
-            From design to implementation, let us provide you with peace of mind
-            when it comes to your electrical service!
+            <span class="cs-button-text"
+              >TX Electrical License Status / Electrical Continuing Education
+              Credits</span
+            >
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">
+            <a
+              href="https://www.tdlr.texas.gov/LicenseSearch/"
+              target="_blank"
+              rel="noopener"
+              >View Here</a
+            >
           </p>
-          <a href="/contact/" class="cs-link">GET QUOTE</a>
-        </div>
-        <picture class="cs-picture">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port12.webp" %}" /> <source
-          media="(min-width: 601px)" srcset="{% getUrl
-          "/assets/images/portfolio/port12.webp" %}" />
-          <img
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="/assets/images/portfolio/port12.webp"
-            alt="leaf"
-            width="345"
-            height="428"
-          />
-        </picture>
-      </li>
-    </ul>
-    <ul class="cs-card-group">
-      <li class="cs-item fade-in">
-        <div class="cs-flex">
-          <picture class="cs-wrapper">
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
             <img
               class="cs-icon"
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="/assets/gifs/light-bulb.gif"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/map-pin-gold-2.svg"
               alt="icon"
-              width="70"
-              height="70"
+              width="32"
+              height="32"
             />
-          </picture>
-          <h3 class="cs-h3">LIGHTING DESIGN & INSTALLATION</h3>
-          <p class="cs-item-text">
-            Our designers can help you discover what is possible as we walk you
-            through the design process for your home or business. We will make
-            your project shine!
+            <span class="cs-button-text">
+              TX Electrical License Renewal Form
+            </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">
+            <a
+              href="https://www.tdlr.texas.gov/App_Online/default.asp?LicenseType=ELE"
+              target="_blank"
+              rel="noopener"
+              >View Here</a
+            >
           </p>
-          <a href="/contact/" class="cs-link">GET QUOTE</a>
-        </div>
-        <picture class="cs-picture">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan5.webp" %}" /> <source media="(min-width:
-          601px)" srcset="{% getUrl "/assets/images/portfolio/fan5.webp" %}" />
-          <img
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="/assets/images/portfolio/fan5.webp"
-            alt="leaf"
-            width="345"
-            height="428"
-          />
-        </picture>
-      </li>
-      <li class="cs-item fade-in">
-        <div class="cs-flex">
-          <picture class="cs-wrapper">
-            <img
-              class="cs-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/gifs/circuit.gif"
-              alt="icon"
-              width="70"
-              height="70"
-            />
-          </picture>
-          <h3 class="cs-h3">EMERGENCY SERVICES</h3>
-          <p class="cs-item-text">
-            When the unexpected happens, we are on call 24/7 to help you through
-            an already difficult situation. You can count on us to be here and
-            give you immediate assistance when you need it most!
-          </p>
-          <a href="/contact/" class="cs-link">GET QUOTE</a>
-        </div>
-        <picture class="cs-picture">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/emergency.webp" %}" /> <source media="(min-width:
-          601px)" srcset="{% getUrl "/assets/images/emergency.webp" %}" />
-          <img
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="/assets/images/emergency.webp"
-            alt="leaf"
-            width="345"
-            height="428"
-          />
-        </picture>
-      </li>
-      <li class="cs-item fade-in">
-        <div class="cs-flex">
-          <picture class="cs-wrapper">
-            <img
-              class="cs-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/gifs/renewable-energy.gif"
-              alt="icon"
-              width="70"
-              height="70"
-            />
-          </picture>
-          <h3 class="cs-h3">REWIRING SERVICES</h3>
-          <p class="cs-item-text">
-            No matter the size of your project, we can help you get the details
-            right from the start. Our designers and technicians are well versed
-            in the current National Electric Code and will make sure you won't
-            hit any snags.
-          </p>
-          <a href="/contact/" class="cs-link">GET QUOTE</a>
-        </div>
-        <picture class="cs-picture">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/rewire.webp" %}" /> <source media="(min-width: 601px)"
-          srcset="{% getUrl "/assets/images/rewire.webp" %}" />
-          <img
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="/assets/images/rewire.webp"
-            alt="leaf"
-            width="345"
-            height="428"
-          />
-        </picture>
-      </li>
-    </ul>
+        </li>
+      </ul>
+      <!-- <a href="" class="cs-button-solid">View All Courses</a> -->
+    </div>
   </div>
 </section>
 
@@ -368,64 +410,66 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
 <!-- ============================================ -->
 
 <section id="RPsbs-313">
-  <div class="cs-container">
+  <div class="cs-container fade-in">
     <!-- Left Image Section -->
-    <div class="cs-image-group fade-in">
+    <div class="cs-image-group">
       <picture class="cs-picture cs-picture1">
         <!--Mobile Image-->
         <source media="(max-width: 600px)" srcset="{% getUrl
-        "/assets/images/cabinets.webp" | resize({ width: 482, height: 536 }) |
+        "/assets/images/white-male.webp" | resize({ width: 482, height: 536 }) |
         avif %}" type="image/avif"> <source media="(max-width: 600px)"
-        srcset="{% getUrl "/assets/images/cabinets.webp" | resize({ width: 482,
-        height: 536 }) | webp %}" type="image/webp"> <source media="(max-width:
-        600px)" srcset="{% getUrl "/assets/images/cabinets.webp" | resize({
-        width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
+        srcset="{% getUrl "/assets/images/white-male.webp" | resize({ width:
+        482, height: 536 }) | webp %}" type="image/webp"> <source
+        media="(max-width: 600px)" srcset="{% getUrl
+        "/assets/images/white-male.webp" | resize({ width: 482, height: 536 }) |
+        jpeg %}" type="image/jpeg">
         <!--Tablet Image-->
         <source media="(max-width: 1024px)" srcset="{% getUrl
-        "/assets/images/cabinets.webp" | resize({ width: 802, height: 892 }) |
+        "/assets/images/white-male.webp" | resize({ width: 802, height: 892 }) |
         avif %}" type="image/avif"> <source media="(max-width: 1024px)"
-        srcset="{% getUrl "/assets/images/cabinets.webp" | resize({ width: 802,
-        height: 892 }) | webp %}" type="image/webp"> <source media="(max-width:
-        1024px)" srcset="{% getUrl "/assets/images/cabinets.webp" | resize({
-        width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
+        srcset="{% getUrl "/assets/images/white-male.webp" | resize({ width:
+        802, height: 892 }) | webp %}" type="image/webp"> <source
+        media="(max-width: 1024px)" srcset="{% getUrl
+        "/assets/images/white-male.webp" | resize({ width: 802, height: 892 }) |
+        jpeg %}" type="image/jpeg">
         <!--Desktop Image-->
         <source media="(min-width: 1024px)" srcset="{% getUrl
-        "/assets/images/cabinets.webp" | resize({ width: 1044, height: 1162 }) |
-        avif %}" type="image/avif"> <source media="(min-width: 1024px)"
-        srcset="{% getUrl "/assets/images/cabinets.webp" | resize({ width: 1044,
-        height: 1162 }) | webp %}" type="image/webp"> <source media="(min-width:
-        1024px)" srcset="{% getUrl "/assets/images/cabinets.webp" | resize({
-        width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg"> <img src="{%
-        getUrl "/assets/images/cabinets.webp" | resize({ width: 1044, height:
-        1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy"
-        decoding="async">
+        "/assets/images/white-male.webp" | resize({ width: 1044, height: 1162 })
+        | avif %}" type="image/avif"> <source media="(min-width: 1024px)"
+        srcset="{% getUrl "/assets/images/white-male.webp" | resize({ width:
+        1044, height: 1162 }) | webp %}" type="image/webp"> <source
+        media="(min-width: 1024px)" srcset="{% getUrl
+        "/assets/images/white-male.webp" | resize({ width: 1044, height: 1162 })
+        | jpeg %}" type="image/jpeg"> <img src="{% getUrl
+        "/assets/images/white-male.webp" | resize({ width: 1044, height: 1162 })
+        | jpeg %}" alt="lawyers" width="522" height="581" decoding="async">
       </picture>
       <picture class="cs-picture cs-picture2">
         <!--Mobile Image-->
         <source media="(max-width: 600px)" srcset="{% getUrl
-        "/assets/images/landing.webp" | resize({ width: 366, height: 354 }) |
+        "/assets/images/banner.webp" | resize({ width: 366, height: 354 }) |
         avif %}" type="image/avif"> <source media="(max-width: 600px)"
-        srcset="{% getUrl "/assets/images/landing.webp" | resize({ width: 366,
+        srcset="{% getUrl "/assets/images/banner.webp" | resize({ width: 366,
         height: 354 }) | webp %}" type="image/webp"> <source media="(max-width:
-        600px)" srcset="{% getUrl "/assets/images/landing.webp" | resize({
-        width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
+        600px)" srcset="{% getUrl "/assets/images/banner.webp" | resize({ width:
+        366, height: 354 }) | jpeg %}" type="image/jpeg">
         <!--Tablet Image-->
         <source media="(max-width: 1024px)" srcset="{% getUrl
-        "/assets/images/landing.webp" | resize({ width: 600, height: 578 }) |
+        "/assets/images/banner.webp" | resize({ width: 600, height: 578 }) |
         avif %}" type="image/avif"> <source media="(max-width: 1024px)"
-        srcset="{% getUrl "/assets/images/landing.webp" | resize({ width: 600,
+        srcset="{% getUrl "/assets/images/banner.webp" | resize({ width: 600,
         height: 578 }) | webp %}" type="image/webp"> <source media="(max-width:
-        1024px)" srcset="{% getUrl "/assets/images/landing.webp" | resize({
+        1024px)" srcset="{% getUrl "/assets/images/banner.webp" | resize({
         width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
         <!--Desktop Image-->
         <source media="(min-width: 1024px)" srcset="{% getUrl
-        "/assets/images/landing.webp" | resize({ width: 780, height: 752 }) |
+        "/assets/images/banner.webp" | resize({ width: 780, height: 752 }) |
         avif %}" type="image/avif"> <source media="(min-width: 1024px)"
-        srcset="{% getUrl "/assets/images/landing.webp" | resize({ width: 780,
+        srcset="{% getUrl "/assets/images/banner.webp" | resize({ width: 780,
         height: 752 }) | webp %}" type="image/webp"> <source media="(min-width:
-        1024px)" srcset="{% getUrl "/assets/images/landing.webp" | resize({
+        1024px)" srcset="{% getUrl "/assets/images/banner.webp" | resize({
         width: 780, height: 752 }) | jpeg %}" type="image/jpeg"> <img src="{%
-        getUrl "/assets/images/landing.webp" | resize({ width: 780, height: 752
+        getUrl "/assets/images/banner.webp" | resize({ width: 780, height: 752
         }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy"
         decoding="async">
       </picture>
@@ -433,34 +477,64 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
     <!-- Right Content Section-->
     <div class="cs-content">
       <span class="cs-topper">ABOUT US</span>
-      <h2 class="cs-title">ABOUT JESDEL ELECTRIC</h2>
+      <h2 class="cs-title">ABOUT OHMS ELECTRICAL CE</h2>
       <p class="cs-text">
-        At Jesdel Electric, we take pride in being Fort Worth’s trusted local
-        electrician. With years of hands-on experience, we provide safe,
-        reliable, and affordable electrical services for homes and businesses
-        across the area.<br /><br />
-
-        Our mission is simple: to keep your lights on, your systems running
-        smoothly, and your family safe. From minor repairs and troubleshooting
-        to full wiring projects and panel upgrades, we deliver workmanship you
-        can count on—done right the first time.<br /><br />
-
-        We believe in building lasting relationships with our customers through
-        honesty, professionalism, and exceptional service. Whether it’s an
-        emergency call or a planned project, you can rely on us to show up on
-        time, respect your property, and complete the job with care.<br /><br />
-
-        At the heart of what we do is a commitment to serving our Fort Worth
-        community with integrity and excellence.
+        <strong
+          >The Fast, Easy, and Secure Learning System — Ohms Electrical
+          CE</strong
+        ><br />
+        Providing <strong>online courses for electricians</strong> to complete
+        their <strong>continuing education requirements</strong> quickly,
+        easily, and at the <strong>lowest prices</strong>. <br /><br />
+        <strong>Fast, Easy, and Affordable — Guaranteed!</strong>
+        <br />
+        Looking for professional
+        <strong>electrical continuing education</strong> to renew your license?
+        At <strong>Ohms Electrical CE</strong>, our
+        <strong>state-approved online CE courses</strong> are carefully selected
+        to ensure full accreditation, ease of access, and quality learning. Each
+        course is designed to
+        <strong>enhance your electrical knowledge</strong>, keep you up to date
+        with <strong>industry standards</strong>, and help you
+        <strong>renew your electrical license online</strong> with confidence.
+        <br /><br />
+        <strong>Learn Anytime, Anywhere</strong>
+        <br />
+        We understand how busy life can get — that’s why
+        <strong>Ohms Electrical CE</strong> brings education directly to you.
+        Whether you’re at home, at the office, or on the go, our
+        <strong>web-based learning platform</strong> works on any device with
+        internet access and a standard web browser (such as Chrome, Firefox, or
+        Edge). No complicated software required. Study at your own pace, on your
+        own schedule, and from the comfort of your home, saving both
+        <strong>time and money</strong> while earning your
+        <strong>continuing education hours</strong>. <br /><br />
+        <strong>Course Approval</strong>
+        <br />
+        All <strong>Ohms Electrical CE courses</strong> are
+        <strong>approved by your state’s regulatory board</strong>, ensuring you
+        receive legitimate credit toward your license renewal. <br /><br />
+        <strong>Secure Payment</strong>
+        <br />
+        Your security matters. All payments are processed safely through
+        <strong>PayPal</strong>, giving you peace of mind. Once you purchase
+        your course, PayPal will send you a confirmation email verifying your
+        secure transaction. <br /><br />
+        Take control of your <strong>continuing education</strong> today with
+        <strong>Ohms Electrical CE</strong> — where
+        <strong>convenience</strong>, <strong>affordability</strong>, and
+        <strong>quality</strong> come together to help you
+        <strong>renew your electrical license with ease</strong>.
       </p>
       <div class="cs-quote">
         <span class="cs-quote-text">
-          As a native Texan, I treat every home and business I work on as if it
-          were my own. My promise is simple—honest work, fair prices, and the
-          peace of mind that your electrical system is safe and reliable.
+          Ohms Electrical CE made renewing my license fast and easy! I completed
+          my continuing education online at my own pace, saved time, and
+          appreciated the affordable pricing. Highly recommend for any
+          electrician looking for a convenient way to stay licensed.
         </span>
-        <span class="cs-name">Jesus Delacruz</span>
-        <span class="cs-job">CEO-Founder</span>
+        <span class="cs-name">Mark A.</span>
+        <span class="cs-job">Licensed Journeyman Electrician</span>
         <img
           class="cs-quote-icon"
           loading="lazy"
@@ -471,7 +545,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           height="77"
         />
       </div>
-      <a href="/about/" class="cs-button-solid">About Us</a>
+      <a href="/about/" class="cs-button-solid">REGISTER NOW</a>
     </div>
   </div>
 </section>
@@ -481,16 +555,19 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
 <!-- ============================================ -->
 
 <section id="why-choose-289">
-  <div class="cs-container">
+  <div class="cs-container fade-in">
     <div class="cs-content">
       <div class="cs-flex">
         <span class="cs-topper">Our Process</span>
-        <h2 class="cs-title">WHY CHOOSE JESDEL ELECTRIC</h2>
+        <h2 class="cs-title">
+          TX State Electrical Board Notification Procedure
+        </h2>
       </div>
       <p class="cs-text">
-        As a trusted Fort Worth electrician, Jesdel Electric is dedicated to
-        safety, efficiency, and customer satisfaction. Trust our licensed
-        professionals to provide dependable solutions with lasting results.
+        When you pay for the course we will give you a certificate of completion
+        and report your CE hours to the Texas Department of Licensing and
+        Regulation - Electrical. We notify the Texas Department of Licensing and
+        Regulation - Electrical of your hours every business day electronically.
       </p>
     </div>
     <ul class="cs-card-group">
@@ -524,8 +601,8 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
         />
         <h3 class="cs-h3">20+ YEARS EXPERIENCE</h3>
         <p class="cs-item-text">
-          With over 25 years of experience, our expertise in electrical work is
-          unmatched.
+          With over 25 years of experience, our expertise in continuing
+          education is unmatched.
         </p>
       </li>
       <li class="cs-item">
@@ -550,341 +627,18 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
 </section>
 
 <!-- ============================================ -->
-<!--                   Gallery                    -->
-<!-- ============================================ -->
-
-<section id="gallery-48">
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Our Portfolio</span>
-      <h2 class="cs-title">The Best at Your Service</h2>
-    </div>
-    <div class="cs-image-group fade-in">
-      <div class="cs-row cs-row-1">
-        <!-- Row 1-->
-        <picture class="cs-picture cs-picture-1">
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan1.webp" | resize({ width: 182, height:
-          250 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/fan1.webp" |
-          resize({ width: 182, height: 250 }) | webp %}" type="image/webp">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan1.webp" | resize({ width: 182, height:
-          250 }) | jpeg %}" type="image/jpeg">
-          <!--Tablet Image-->
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan1.webp" | resize({ width: 634, height:
-          798 }) | avif %}" type="image/avif"> <source media="(max-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan1.webp" |
-          resize({ width: 634, height: 798 }) | webp %}" type="image/webp">
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan1.webp" | resize({ width: 634, height:
-          798 }) | jpeg %}" type="image/jpeg">
-          <!--Desktop Image-->
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan1.webp" | resize({ width: 826, height:
-          1134 }) | avif %}" type="image/avif"> <source media="(min-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan1.webp" |
-          resize({ width: 826, height: 1134 }) | webp %}" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan1.webp" | resize({ width: 826, height:
-          1134 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-          "/assets/images/portfolio/fan1.webp" | resize({ width: 826, height:
-          1134 }) | jpeg %}" alt="new hallway" width="413" height="567"
-          loading="lazy" decoding="async">
-        </picture>
-        <picture class="cs-picture cs-picture-2">
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan3.webp" | resize({ width: 182, height:
-          276 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/fan3.webp" |
-          resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan3.webp" | resize({ width: 182, height:
-          276 }) | jpeg %}" type="image/jpeg">
-          <!--Tablet Image-->
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan3.webp" | resize({ width: 634, height:
-          886 }) | avif %}" type="image/avif"> <source media="(max-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan3.webp" |
-          resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan3.webp" | resize({ width: 634, height:
-          886 }) | jpeg %}" type="image/jpeg">
-          <!--Desktop Image-->
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan3.webp" | resize({ width: 826, height:
-          1258 }) | avif %}" type="image/avif"> <source media="(min-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan3.webp" |
-          resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan3.webp" | resize({ width: 826, height:
-          1258 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-          "/assets/images/portfolio/fan3.webp" | resize({ width: 826, height:
-          1258 }) | jpeg %}" alt="new home construction" width="413"
-          height="629" loading="lazy" decoding="async">
-        </picture>
-        <picture class="cs-picture cs-picture-3">
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan4.webp" | resize({ width: 182, height:
-          226 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/fan4.webp" |
-          resize({ width: 182, height: 226 }) | webp %}" type="image/webp">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan4.webp" | resize({ width: 182, height:
-          226 }) | jpeg %}" type="image/jpeg">
-          <!--Tablet Image-->
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan4.webp" | resize({ width: 634, height:
-          720 }) | avif %}" type="image/avif"> <source media="(max-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan4.webp" |
-          resize({ width: 634, height: 720 }) | webp %}" type="image/webp">
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan4.webp" | resize({ width: 634, height:
-          720 }) | jpeg %}" type="image/jpeg">
-          <!--Desktop Image-->
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan4.webp" | resize({ width: 826, height:
-          1024 }) | avif %}" type="image/avif"> <source media="(min-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan4.webp" |
-          resize({ width: 826, height: 1024 }) | webp %}" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan4.webp" | resize({ width: 826, height:
-          1024 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-          "/assets/images/portfolio/fan4.webp" | resize({ width: 826, height:
-          1024 }) | jpeg %}" alt="building a new wall" width="413" height="512"
-          loading="lazy" decoding="async">
-        </picture>
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 2 -->
-      <div class="cs-row cs-row-2">
-        <picture class="cs-picture cs-picture-1">
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan5.webp" | resize({ width: 182, height:
-          216 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/fan5.webp" |
-          resize({ width: 182, height: 216 }) | webp %}" type="image/webp">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan5.webp" | resize({ width: 182, height:
-          216 }) | jpeg %}" type="image/jpeg">
-          <!--Tablet Image-->
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan5.webp" | resize({ width: 634, height:
-          692 }) | avif %}" type="image/avif"> <source media="(max-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan5.webp" |
-          resize({ width: 634, height: 692 }) | webp %}" type="image/webp">
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan5.webp" | resize({ width: 634, height:
-          692 }) | jpeg %}" type="image/jpeg">
-          <!--Desktop Image-->
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan5.webp" | resize({ width: 826, height:
-          984 }) | avif %}" type="image/avif"> <source media="(min-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan5.webp" |
-          resize({ width: 826, height: 984 }) | webp %}" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan5.webp" | resize({ width: 826, height:
-          984 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-          "/assets/images/portfolio/fan5.webp" | resize({ width: 826, height:
-          984 }) | jpeg %}" alt="new kitchen" width="413" height="492"
-          loading="lazy" decoding="async">
-        </picture>
-        <picture class="cs-picture cs-picture-2">
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan2.webp" | resize({ width: 182, height:
-          228 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/fan2.webp" |
-          resize({ width: 182, height: 228 }) | webp %}" type="image/webp">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan2.webp" | resize({ width: 182, height:
-          228 }) | jpeg %}" type="image/jpeg">
-          <!--Tablet Image-->
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan2.webp" | resize({ width: 634, height:
-          728 }) | avif %}" type="image/avif"> <source media="(max-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan2.webp" |
-          resize({ width: 634, height: 728 }) | webp %}" type="image/webp">
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan2.webp" | resize({ width: 634, height:
-          728 }) | jpeg %}" type="image/jpeg">
-          <!--Desktop Image-->
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan2.webp" | resize({ width: 826, height:
-          1034 }) | avif %}" type="image/avif"> <source media="(min-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/fan2.webp" |
-          resize({ width: 826, height: 1034 }) | webp %}" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/fan2.webp" | resize({ width: 826, height:
-          1034 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-          "/assets/images/portfolio/fan2.webp" | resize({ width: 826, height:
-          1034 }) | jpeg %}" alt="apartment addition" width="413" height="517"
-          loading="lazy" decoding="async">
-        </picture>
-
-        <picture class="cs-picture cs-picture-3">
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port8.webp" | resize({ width: 182, height:
-          276 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/port8.webp" |
-          resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port8.webp" | resize({ width: 182, height:
-          276 }) | jpeg %}" type="image/jpeg">
-          <!--Tablet Image-->
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port8.webp" | resize({ width: 634, height:
-          886 }) | avif %}" type="image/avif"> <source media="(max-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.webp" |
-          resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port8.webp" | resize({ width: 634, height:
-          886 }) | jpeg %}" type="image/jpeg">
-          <!--Desktop Image-->
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port8.webp" | resize({ width: 826, height:
-          1258 }) | avif %}" type="image/avif"> <source media="(min-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.webp" |
-          resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port8.webp" | resize({ width: 826, height:
-          1258 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-          "/assets/images/portfolio/port8.webp" | resize({ width: 826, height:
-          1258 }) | jpeg %}" alt="kew kitchen cabinets" width="413" height="629"
-          loading="lazy" decoding="async">
-        </picture>
-
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 3 -->
-      <div class="cs-row cs-row-3">
-        <picture class="cs-picture cs-picture-1">
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port3.webp" | resize({ width: 182, height:
-          276 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/port3.webp" |
-          resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port3.webp" | resize({ width: 182, height:
-          276 }) | jpeg %}" type="image/jpeg">
-          <!--Tablet Image-->
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port3.webp" | resize({ width: 634, height:
-          880 }) | avif %}" type="image/avif"> <source media="(max-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.webp" |
-          resize({ width: 634, height: 880 }) | webp %}" type="image/webp">
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port3.webp" | resize({ width: 634, height:
-          880 }) | jpeg %}" type="image/jpeg">
-          <!--Desktop Image-->
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port3.webp" | resize({ width: 826, height:
-          1250 }) | avif %}" type="image/avif"> <source media="(min-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.webp" |
-          resize({ width: 826, height: 1250 }) | webp %}" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port3.webp" | resize({ width: 826, height:
-          1250 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-          "/assets/images/portfolio/port3.webp" | resize({ width: 826, height:
-          1250 }) | jpeg %}" alt="new black window structure" width="413"
-          height="625" loading="lazy" decoding="async">
-        </picture>
-        <picture class="cs-picture cs-picture-2">
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port6.webp" | resize({ width: 182, height:
-          198 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/port6.webp" |
-          resize({ width: 182, height: 198 }) | webp %}" type="image/webp">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port6.webp" | resize({ width: 182, height:
-          198 }) | jpeg %}" type="image/jpeg">
-          <!--Tablet Image-->
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port6.webp" | resize({ width: 634, height:
-          636 }) | avif %}" type="image/avif"> <source media="(max-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.webp" |
-          resize({ width: 634, height: 636 }) | webp %}" type="image/webp">
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port6.webp" | resize({ width: 634, height:
-          636 }) | jpeg %}" type="image/jpeg">
-          <!--Desktop Image-->
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port6.webp" | resize({ width: 826, height:
-          904 }) | avif %}" type="image/avif"> <source media="(min-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.webp" |
-          resize({ width: 826, height: 904 }) | webp %}" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port6.webp" | resize({ width: 826, height:
-          904 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-          "/assets/images/portfolio/port6.webp" | resize({ width: 826, height:
-          904 }) | jpeg %}" alt="kitchen rebovation" width="413" height="452"
-          loading="lazy" decoding="async">
-        </picture>
-
-        <picture class="cs-picture cs-picture-3">
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port9.webp" | resize({ width: 182, height:
-          276 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/port9.webp" |
-          resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-          <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port9.webp" | resize({ width: 182, height:
-          276 }) | jpeg %}" type="image/jpeg">
-          <!--Tablet Image-->
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port9.webp" | resize({ width: 634, height:
-          886 }) | avif %}" type="image/avif"> <source media="(max-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.webp" |
-          resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-          <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port9.webp" | resize({ width: 634, height:
-          886 }) | jpeg %}" type="image/jpeg">
-          <!--Desktop Image-->
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port9.webp" | resize({ width: 826, height:
-          1258 }) | avif %}" type="image/avif"> <source media="(min-width:
-          1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.webp" |
-          resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-          <source media="(min-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port9.webp" | resize({ width: 826, height:
-          1258 }) | jpeg %}" type="image/jpeg"> <img src="{% getUrl
-          "/assets/images/portfolio/port9.webp" | resize({ width: 826, height:
-          1258 }) | jpeg %}" alt="bathroom renovation" width="413" height="629"
-          loading="lazy" decoding="async">
-        </picture>
-
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-    </div>
-    <a href="/gallery/" class="cs-button-solid">VIEW GALLERY</a>
-  </div>
-</section>
-
-<!-- ============================================ -->
 <!--                   Reviews                    -->
 <!-- ============================================ -->
 
 <section id="reviews-67">
-  <div class="cs-container">
+  <div class="cs-container fade-in">
     <div class="cs-content">
       <span class="cs-topper">Our Reviews</span>
-      <h2 class="cs-title">READ WHAT OUR CUSTOMERS SAY</h2>
+      <h2 class="cs-title">READ WHAT OUR STUDENTS SAY</h2>
       <p class="cs-text">
-        From the first phone call to the final inspection, we treat every
-        project with the same level of care and attention as if we were working
-        on our own property. Our team is committed to listening to your needs,
-        offering clear solutions, and ensuring your complete
-        satisfaction—because for us, it’s not just about fixing wires, it’s
-        about building lasting relationships with the people we serve.
+        Our students consistently praise how easy it is to navigate our courses,
+        the flexibility of studying anytime, and the clear, up-to-date lessons
+        that make continuing education simple.
       </p>
     </div>
     <ul class="cs-card-group">
@@ -901,16 +655,17 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           height="80"
         />
         <p class="cs-item-text">
-          I called Jesdel Electric following the recomendation of 2 friends in
-          Irving. Jesús installed a new 60/240v circuit for us, he was punctual
-          and respectful, communication was excellent (a rare treat among
-          contractors in my experience). I am satisfied with his work and would
-          recommend Jesdel Electric.
+          I’ve taken several continuing education courses over the years, but
+          Ohms Electrical CE was by far the easiest experience. The lessons were
+          clear, well-organized, and I could work on my own schedule. I finished
+          my course in one evening and renewed my license without any issues.
+          Highly recommend this site to any electrician who wants a quick and
+          smooth renewal process!
         </p>
         <div class="cs-info">
           <div class="cs-flex-group">
-            <span class="cs-name">Flory Malloy</span>
-            <span class="cs-desc">Homeowner</span>
+            <span class="cs-name">Ted Kramer</span>
+            <span class="cs-desc">Master Electrician</span>
           </div>
           <img
             class="cs-item-stars"
@@ -937,16 +692,16 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           height="80"
         />
         <p class="cs-item-text">
-          Mr. Jesus is a masterful electrician and more importantly, has
-          excellent communication. A lot of contractors don’t always respond or
-          show up on time, but he showed on time several times and was efficient
-          and explained to me the problems as he encountered them. His price was
-          comparable to others. Highly recommend.
+          Ohms Electrical CE made license renewal stress-free. The course was
+          affordable and well-designed, and the customer support team was very
+          responsive when I had a login issue. It’s nice to finally find a
+          continuing education provider that’s both professional and easy to
+          use. I’ll definitely be back next year!
         </p>
         <div class="cs-info">
           <div class="cs-flex-group">
             <span class="cs-name">Wesley Collins</span>
-            <span class="cs-desc">Homeowner</span>
+            <span class="cs-desc">Master Electrician</span>
           </div>
           <img
             class="cs-item-stars"
@@ -961,10 +716,10 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
         </div>
       </li>
     </ul>
-    <a href="/reviews/" class="cs-button-solid">Read All Reviews</a>
   </div>
 </section>
 
 <script defer src="/assets/js/fade.js"></script>
+<script defer src="/assets/js/services.js"></script>
 
 {% endblock %}
