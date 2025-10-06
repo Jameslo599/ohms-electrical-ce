@@ -510,7 +510,7 @@
     }
 
     .cs-floater {
-      width: calc(451 / 16 * 1rem);
+      // width: calc(451 / 16 * 1rem);
       left: clamp(50%, 18vw, 75%);
       bottom: calc(-100 / 16 * 1rem);
     }
